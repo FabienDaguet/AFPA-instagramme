@@ -128,9 +128,14 @@ body {
 
 @media (min-width: 1024px) {
 
+    .header {
+        border: 1px solid #DFDFDF;
+    }
+
     .desktop-container {
         display: block;
-        width: 90%;
+        width: 80%;
+        margin-top: 1.5rem;
         margin-left: auto;
         margin-right: auto;
     }
@@ -149,7 +154,12 @@ body {
         margin: 0;
     }
 
-    .post__picture {
-        width: 502px;
+    .comment-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .comment__input-container {
+        order:1
     }
 }    

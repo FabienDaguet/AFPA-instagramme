@@ -70,6 +70,26 @@ body {
 }
 
 
+/*----Comment----*/
+
+.comment__input-container {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-top: 1px solid #D1D1D1;
+    border-bottom: 1px solid #D1D1D1;
+    padding: 1rem 0;
+}
+
+.comment__input {
+    border: none;
+}
+
+.comment {
+   margin-top: 0.5rem;
+   margin-bottom: 0;
+}
+
+
 /*----Footer----*/
 
 .nav {

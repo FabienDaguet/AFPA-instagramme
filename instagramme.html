@@ -13,27 +13,46 @@
         <span>Instagramme</span>
     </header>
     <section class="page-content">
-        <div class="post">
-            <img class="post__picture" src="images/breakfast-small 1.svg" alt="post picture">
-        </div>
-        <div class="post-user">
-            <img class="post-user__picture" src="images/user.svg" alt="avatar">
-            <span class="post-user__name important">Pseudo</span>
-            <img class="post-user__certified" src="images/verified.svg" alt="certified-icon">
-        </div>
-        <div class="post-info">
-            <span class="important">10000 Likes</span>
-            <span class="lower-content">2 sem.</span>
-        </div>
-        <div class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis unde officia libero. Eum, magni. Laboriosam est delectus nisi reiciendis facilis consectetur ratione eligendi ab, quas pariatur amet fuga temporibus mollitia.</div>
-    </section>    
+        <section class="post-container">
+            <div class="post">
+                <img class="post__picture" src="images/breakfast-small 1.svg" alt="post picture">
+            </div>
+            <div class="post-user">
+                <img class="post-user__picture" src="images/user.svg" alt="avatar">
+                <span class="post-user__name important">Pseudo</span>
+                <img class="post-user__certified" src="images/verified.svg" alt="certified-icon">
+            </div>
+            <div class="post-info">
+                <span class="important">10000 Likes</span>
+                <span class="lower-content">2 sem.</span>
+            </div>
+            <div class="post-description"> 
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis unde officia libero. Eum, magni. Laboriosam est delectus nisi reiciendis facilis consectetur ratione eligendi ab, quas pariatur amet fuga temporibus mollitia.</span>
+            </div>
+        </section>
+        <section class="comment-container">
+            <div class="comment__input-container lower-content">
+                    <i class="far fa-heart"></i>
+                    <input class="comment__input" type="text" placeholder="Ajoutez un commentaire...">
+            </div>
+            <div>
+                <p class="comment"><span class="important">Pseudo</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus enim quis architecto.</p>
+            </div>  
+            <div>
+                <p class="comment"><span class="important">Pseudo</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus enim quis architecto.</p>
+            </div>  
+            <div>
+                <p class="comment"><span class="important">Pseudo</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus enim quis architecto.</p>
+            </div>    
+        </section>  
+    </section>  
     <footer>
         <nav class="nav">
-            <i class="fas fa-home"></i>
-            <i class="fas fa-search"></i>
-            <i class="fas fa-camera"></i>
-            <i class="far fa-heart"></i>
-            <i class="far fa-user"></i>
+            <i class="fas fa-home nav__home"></i>
+            <i class="fas fa-search nav__search"></i>
+            <i class="fas fa-camera nav__camera"></i>
+            <i class="far fa-heart nav__heart"></i>
+            <i class="far fa-user nav__user"></i>
         </nav>
     </footer>
 </body>    

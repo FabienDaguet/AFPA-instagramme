@@ -73,6 +73,8 @@ body {
 /*----Comment----*/
 
 .comment__input-container {
+    display: flex;
+    align-items: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
     border-top: 1px solid #D1D1D1;
@@ -82,6 +84,8 @@ body {
 
 .comment__input {
     border: none;
+    width: 100%;
+    margin-left: 0.75rem;
 }
 
 .comment {
@@ -118,3 +122,34 @@ body {
     border-radius: 9999px;
     background-color: red;
 }
+
+
+/*------MEDIA-QUERIES-------*/
+
+@media (min-width: 1024px) {
+
+    .desktop-container {
+        display: block;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .page-content {
+        display: flex;
+    }
+
+    .desktop-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .post {
+        margin: 0;
+    }
+
+    .post__picture {
+        width: 502px;
+    }
+}    

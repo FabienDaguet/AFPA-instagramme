@@ -52,12 +52,10 @@ body {
 }
 
 .post-user__picture {
-    border: 2px solid;
-    border-image: linear-gradient(#8A2BE2, #FF00FF);
-    border-radius: 50%;
+    border: 3px solid;
+    border-radius: 50px;
+    border-image: linear-gradient(45deg, rgb(138,43,226),rgb(255,0,255)) 1;
     margin-right: 0.5rem;
-    width: 1.25rem;
-    height: 1.25rem;
 }
 
 .post-user__name {

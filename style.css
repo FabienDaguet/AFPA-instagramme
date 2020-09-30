@@ -43,6 +43,7 @@ body {
 
 .post__picture {
     width: 100%;
+    height: 100%;
 }
 
 .post-user {
@@ -108,11 +109,19 @@ body {
     box-shadow: 0px -1px 4px rgba(175, 175, 175, 0.25);
 } 
 
-.nav__heart {
+.nav__icon {
+    transition-duration: 0.5s;
+}
+
+.nav__icon:hover {
+    transform: scale(2);
+}
+
+.heart-nav {
     position: relative;
 }
 
-.nav__heart::after {
+.heart-nav::after {
     content: '';
     position: absolute;
     right: -4px;
@@ -121,6 +130,15 @@ body {
     width: 0.25rem;
     border-radius: 9999px;
     background-color: red;
+    animation-name: notification;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes notification {
+    0% {transform: scale(1);}
+    50% {transform: scale(2);}
+    100% {transform: scale(1);}
 }
 
 
@@ -134,32 +152,52 @@ body {
 
     .desktop-container {
         display: block;
-        width: 80%;
+        width: 774px;
         margin-top: 1.5rem;
         margin-left: auto;
         margin-right: auto;
+      
     }
 
     .page-content {
-        display: flex;
+        display: flex; 
+       
     }
 
     .desktop-content {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        width: 272px;
     }
 
     .post {
         margin: 0;
     }
 
+    .post__picture {
+        object-fit: contain;
+        margin-right: 1rem;
+        background: #000000;
+    }
+
     .comment-container {
         display: flex;
         flex-direction: column;
+        flex-grow: 1;
+        
+    }
+    
+    .test {
+        flex-grow: 1;
+        overflow: auto;
+        height: 400px;
+
     }
 
     .comment__input-container {
-        order:1
+        order:1;
+        margin-bottom: 0;
     }
+
 }    

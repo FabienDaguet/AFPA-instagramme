@@ -9,7 +9,12 @@
 body {
     margin: 0;
     font-family: 'roboto', sans-serif;
-    padding-bottom: 3.5rem;
+    padding-bottom: 4rem;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
 }
 
 
@@ -38,7 +43,7 @@ body {
 
 .post {
     margin-left: -1rem;
-    margin-right: -2rem;
+    margin-right: -3rem;
 }
 
 .post__picture {
@@ -108,7 +113,7 @@ body {
 
 /*----Footer----*/
 
-.nav {
+.footer {
     position: fixed;
     bottom: 0;
     z-index: 1;
@@ -119,6 +124,12 @@ body {
     background-color: #ffffff;
     box-shadow: 0px -1px 4px rgba(175, 175, 175, 0.25);
 } 
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
 
 .nav__icon {
     transition-duration: 0.5s;
@@ -232,6 +243,12 @@ body {
         order:1;
         margin-bottom: 0;
         padding-left: 1rem;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        width: 18.75rem;
     }
 
 }    
